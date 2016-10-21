@@ -1,3 +1,114 @@
 h1 {
 	color: blue;
 }
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image:url('http://images.all-free-download.com/images/graphiclarge/starry_night_192398.jpg');
+}
+
+.ghost{
+  width: 250px;
+  height:300px;
+  position:relative;
+  margin:100px auto;
+  animation: ghost_bottom_float 2.5s infinite;
+  animation-fill-mode:both;
+}
+
+.ghost_head{
+  width:100%;
+  height:250px;
+  border-radius:50% 50% 0 0;
+  background-color:#fff;
+}
+
+.ghost_eye{
+  position:absolute;
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  top:70px;
+  background:#111;
+}
+
+.ghost_left_eye{
+  left:70px;
+  transform: scale(.70);
+}
+
+.ghost_right_eye{
+  right:70px;
+}
+
+.ghost_smile{
+  position:absolute;
+  width:40px;
+  height:20px;
+  border-radius: 7px 7px 50% 50%;
+  background:#000;
+  top: 109px;
+  left: 106px;
+}
+
+.ghost_bottom{
+  width:100%;
+  height:1px;
+  background:#fff;
+}
+
+.ghost_floaty{
+  width:20%;
+  height:60px;
+  background:#fff;
+  float: left;
+  border-radius:0 0 50% 50%;
+
+  animation: ghost_bottom_float 2.5s infinite;
+  animation-fill-mode:both;
+}
+
+
+@keyframes ghost_bottom_float {
+  0% {
+    transform: translateY(-30px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+
+}
+
+#ghost_floaty_1{
+  animation-delay: .5s
+}
+#ghost_floaty_2{
+  animation-delay: 1.5s
+}
+#ghost_floaty_3{
+  animation-delay: 1s
+}
+#ghost_floaty_4{
+  animation-delay: 2s
+}
+
+@keyframes ghost_body_float {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+
+}
+
